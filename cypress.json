@@ -4,5 +4,7 @@
   "testFiles": "**/*.spec.js",
   "experimentalComponentTesting": true,
   "componentFolder": "src",
-  "fixturesFolder": false
+  "fixturesFolder": false,
+  "viewportWidth": 500,
+  "viewportHeight": 500
 }
