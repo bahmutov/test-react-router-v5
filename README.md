@@ -33,3 +33,26 @@ mount(
 See [cypress-react-unit-test#388](https://github.com/bahmutov/cypress-react-unit-test/issues/388) for example
 
 </details>
+
+<details>
+  <summary>Cannot read property '...' of null</summary>
+  If the components inside the route rely on a context, surround the routes with appropriate context provider.
+  
+```js
+// AuthenticatedRoute.js
+export default function AuthenticatedRoute({ children, ...rest }) {
+  const { isAuthenticated } = useAppContext();
+  ...
+}
+// test file
+mount(
+  <BrowserRouter>
+    <AppContext.Provider value={{ isAuthenticated: true, userHasAuthenticated: true }}>
+      <AuthenticatedRoute>...</AuthenticatedRoute>
+    </AppContext.Provider>
+  </BrowserRouter>
+)
+```
+
+See [cypress-react-unit-test#388](https://github.com/bahmutov/cypress-react-unit-test/issues/388) for example
+</details>
