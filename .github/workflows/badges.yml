@@ -22,6 +22,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           # just perform install
+          yarn: true
           runTests: false
 
       - name: Update version badges 🏷
