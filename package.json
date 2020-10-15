@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cypress run",
+    "test": "cypress-expect run --passing 5",
     "eject": "react-scripts eject",
     "update:badges": "update-badge cypress cypress-react-unit-test"
   },
