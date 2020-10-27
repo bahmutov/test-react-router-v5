@@ -1,7 +1,7 @@
 # test-react-router-v5
 > Component tests for apps that use [React Router v5](https://reacttraining.com/react-router/web/guides/quick-start)
 
-![cypress version](https://img.shields.io/badge/cypress-5.5.0-brightgreen) ![cypress-react-unit-test version](https://img.shields.io/badge/cypress--react--unit--test-4.16.5-brightgreen)
+![cypress version](https://img.shields.io/badge/cypress-5.5.0-brightgreen) ![cypress-react-unit-test version](https://img.shields.io/badge/cypress--react--unit--test-4.16.7-brightgreen)
 
 Uses [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test)
 
